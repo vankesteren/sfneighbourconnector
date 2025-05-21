@@ -74,11 +74,11 @@ runNeighborConnector <- function() {
 
         if (!(j %in% nb[[i]])) {
           nb[[i]] <<- sort(c(nb[[i]], j))
-          manual_edits[[length(manual_edits) + 1]] <<- sprintf("nb[[%d]] <- c(nb[[%d]], %d)", i, i, j)
+          manual_edits[[length(manual_edits) + 1]] <<- sprintf("nb[[%d]] <- c(nb[[%d]], %dL)", i, i, j)
         }
         if (!(i %in% nb[[j]])) {
           nb[[j]] <<- sort(c(nb[[j]], i))
-          manual_edits[[length(manual_edits) + 1]] <<- sprintf("nb[[%d]] <- c(nb[[%d]], %d)", j, j, i)
+          manual_edits[[length(manual_edits) + 1]] <<- sprintf("nb[[%d]] <- c(nb[[%d]], %dL)", j, j, i)
         }
 
         clicked(character(0))
