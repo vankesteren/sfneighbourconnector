@@ -1,0 +1,30 @@
+Package: sfneighbourconnector
+Type: Package
+Title: Interactively add neighbour connections to sf objects
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Erik-Jan", "van Kesteren",
+      email = "erikjanvankesteren@pm.me",
+      role = c("aut", "cre")
+    )
+  )
+Description: This add-in allows you to select an sf object
+    in your environment and manually add connections to the
+    neighbour list created by spdep's "poly2nb" function.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    shiny,
+    leaflet,
+    sf,
+    spdep,
+    dplyr,
+    rstudioapi
+Suggests:
+    knitr,
+    rmarkdown
+Config/rlang:
+    experimental = true
+RoxygenNote: 7.3.2

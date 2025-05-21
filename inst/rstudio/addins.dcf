@@ -1,0 +1,4 @@
+Name: Manual Neighbor Connector
+Description: Click two polygons to add neighbor links interactively.
+Binding: runNeighborConnector
+Interactive: true
